@@ -1,0 +1,7 @@
+<meta charset="UTF-8">;
+<script>
+    const precoProduto = prompt(`Insira o preço original do produto`);
+    const precoPromocional = prompt(`Insira o preço do produto durante a campanha promocional`);
+    const porcentagemDescoto = 100-((Number(precoPromocional) * 100) / Number(precoProduto)) ;
+    alert(`A porcentagem de desconto na campanha promocional é igual a ${porcentagemDescoto}%.`);
+</script>

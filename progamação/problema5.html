@@ -1,0 +1,9 @@
+<meta charset="UTF-8">;
+<script>
+    const pedreiro = prompt(`Informe quantas horas foram trabalhadas pelo pedreiro`);
+    const pintor = prompt(`Informe quantas horas foram trabalhadas pelo pintor`);
+    const pedreiroTotal = Number(pedreiro) * 30;
+    const pintorTotal = Number(pintor) * 25;
+    const total = pedreiroTotal + pintorTotal;
+    alert(`O valor que deverá ser pago ao pedreiro é R$ ${pedreiroTotal.toFixed(2)}. Ao pintor deverá ser pago R$ ${pintorTotal.toFixed(2)}. E o custo total da obra será R$ ${total.toFixed(2)}.`);
+</script>

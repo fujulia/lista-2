@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    const tempo = prompt(`Informe quanto tempo gastou durante a viagem em horas`);
+    const litros = prompt(`Informe quantos litros de combustível foram consumidos`);
+    const preco = prompt(`Informe o preço do litro de combustível`);
+    const quilometragem = prompt(`Informe a quilometragem total percorrida` );
+    const velocidadeMedia = Number(quilometragem) / Number(tempo);
+    const consumo = Number(quilometragem)/ Number(litros);
+    const precoCombustivel = Number(litros) * Number(preco);
+    const custo = precoCombustivel / Number(quilometragem);
+    alert(`A velocidade média da viagem foi de ${velocidadeMedia} km por hora. O custo médio de combustível pelo veículo é de ${consumo} litros por hora.O custo total de combustível foi de R$${precoCombustivel.toFixed(2)}.E o custo da viagem por km percorrido foi de R$${custo.toFixed(2)}.`);
+</script>

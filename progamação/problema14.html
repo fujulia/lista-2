@@ -1,0 +1,9 @@
+<meta charset="UTF-8">
+<script>
+    const salarioFixo = prompt(`Insira seu salário fixo`);
+    const carrosVendidos = prompt(`Insira quantos carros foram vendidos`);
+    const valor = prompt(`Insira o valor das vendas`);
+    const salario = Number(salarioFixo) + (225 * Number(carrosVendidos)) + (Number(valor)*5 / 100);
+    const impostos = salario - (salario*20 / 100);
+    alert(`A remuneração final do vendedor será de R$${salario.toFixed(2)}. E seu salário com desconto de 20% de impostos será R$${impostos.toFixed(2)}.`)
+</script>
